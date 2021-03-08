@@ -269,7 +269,7 @@ async function starts() {
         		const bisakah = ['Bisa','Tidak Bisa']
 		        const kapankah = ['Hari Lagi','Minggu Lagi','Bulan Lagi','Tahun Lagi']
 			const botNumber = client.user.jid
-			const ownerNumber = ["5565981709268@s.whatsapp.net"] // replace this with your number
+			const ownerNumber = ["556581709268@s.whatsapp.net"] // replace this with your number
 			const nomorOwner = [ownerNumber]
 			const isGroup = from.endsWith('@g.us')
 			const totalchat = await client.chats.all()
@@ -341,8 +341,8 @@ async function starts() {
 				case 'bot':
 					client.sendMessage(from, help(prefix), text)
 					break
-                                /*case 'makermenu': 
-                                        hisil = fs.readFileSync('./src/makerimg.jpg')
+               /*case 'makermenu': 
+                    hisil = fs.readFileSync('./src/makerimg.jpg')
                                         client.sendMessage(from, hisil, image, {quoted: mek, caption: makermenu(prefix), text})
                                         break*/
 case 'timer':
@@ -459,8 +459,10 @@ case 'timer':
                 break
               case 'owner':
                 case 'creator':
-                  client.sendMessage(from, {displayname: "Jeff", vcard: vcard}, MessageType.contact, { quoted: mek})
-               client.sendMessage(from, 'Aqui está o número do meu dono, salve depois',MessageType.text, { quoted: mek} )
+                case 'Dono':
+					memein = await kagApi.memeindo()
+					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlvyqNSjqKjan_IuqeAHVa-3CS2VWx9eDXOA&usqp=CAU`)
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: '♞ ℭℜℑ𝔄𝔇𝔒ℜ : 𝔖𝔈𝔑𝔓𝔄ℑ ♞\n♞ 𝔑𝔘𝔐𝔈ℜ𝔒 : https//Wa.me/+5565981709268 ♞'})
                 break
 	case 'hidetag':
                 client.updatePresence(from, Presence.composing) 
