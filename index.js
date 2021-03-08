@@ -78,7 +78,7 @@ const { othermenu } require('./database/menu/othermenu')*/
 /******LOAD OF VCARD INPUT******/
 const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
             + 'VERSION:3.0\n' 
-            + 'FN:ninem🖤\n' // full name
+            + 'FN:Senpai🖤\n' // full name
             + 'ORG:Owner Bot;\n' // the organization of the contact
             + 'TEL;type=CELL;type=VOICE;waid=5565981709268 (65) 98170-9268\n' // ID do WhatsApp + número de telefone
             + 'END:VCARD'
@@ -90,7 +90,7 @@ blocked = []
 /******BEGIN OF FUNCTIONS INPUT******/
 const getLevelingXp = (userId) => {
             let position = false
-            Object.keys(_level).forEach((i) => {
+            Object.keys(_level).forEach((i) um=> {
                 if (_level[i].jid === userId) {
                     position = i
                 }
@@ -258,8 +258,8 @@ async function starts() {
 				},
 				only: {
 					group: '[❗] Este comando só pode ser usado em grupos! ❌',
-					ownerG: '[❗] Este comando só pode ser usado pelo grupo proprietário!(Senpai😌) ❌',
-					ownerB: '[❗] Este comando só pode ser usado pelo nabuto/ninem! ❌',
+					ownerG: '[❗] Este comando só pode ser usado pelo proprietário do grupo!❌',
+					ownerB: '[❗] Este comando só pode ser usado pelo Senpai! ❌',
 					admin: '[❗] Este comando só pode ser usado por administradores de grupo! ❌',
 					Badmin: '[❗] Este comando só pode ser usado quando o bot se torna administrador! ❌',
                                         daftarB: `── 「REGISTRE-SE」 ──\nOlá como!\nVocê não está registrado no banco de dados, \n\nComando : ${prefix}daftar nome|idade\nExemplo : ${prefix}daftar Senpai|14`,
@@ -287,7 +287,7 @@ async function starts() {
 			const isOwner = ownerNumber.includes(sender)
                         const isUser = user.includes(sender)
                         const isLevelingOn = isGroup ? _leveling.includes(groupId) : false
-                        const NomerOwner = '5565981709268@s.whatsapp.net'
+                        const NomerOwner = '556581709268@s.whatsapp.net'
                         /******ApiKey Input******/
                         const BarBarKey = 'YOUR_APIKEY'
                         /******End of ApiKey Input******/
