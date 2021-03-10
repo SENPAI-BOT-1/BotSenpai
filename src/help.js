@@ -171,7 +171,9 @@ Canal do criador: https://youtube.com/channel/UC1GWxdNnpB0oXT9bDUUWJ7w
 https://chat.whatsapp.com/JTLIzLvS5M4JQp6lS5Idnf
 MEU CHAT BOTS
 https://chat.whatsapp.com/Kr5QiYOLrlWCsIhfDz0vnG
-BOT By:
+GIT DO BOT
+https://github.com/SENPAI-BOT-1/BotSenpai
+BOT By :Senpai
 `
 }
 exports.help = help
